@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="250" id="6xS-Jo-FHs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="250" id="6xS-Jo-FHs" customClass="ImageCell" customModule="Universal_Reference" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6xS-Jo-FHs" id="Xsa-kQ-Cel">
@@ -35,8 +35,11 @@
                                         <constraint firstItem="2bQ-zM-rj1" firstAttribute="top" secondItem="Xsa-kQ-Cel" secondAttribute="topMargin" id="y0C-QD-LYR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="customImageView" destination="2bQ-zM-rj1" id="4rk-xl-HK3"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="mp4-Vj-vbO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="mp4-Vj-vbO" customClass="ListCell" customModule="Universal_Reference" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="278" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mp4-Vj-vbO" id="RhF-nn-yEM">
@@ -57,8 +60,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="Iqp-wo-uag" secondAttribute="trailing" id="jA8-Jb-8DT"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Iqp-wo-uag" id="tGD-vH-Wez"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" id="KRG-iI-TPJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" id="KRG-iI-TPJ" customClass="TextCell" customModule="Universal_Reference" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="322" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KRG-iI-TPJ" id="xjz-h2-eZN">
@@ -79,6 +85,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="vqQ-In-gKc" secondAttribute="bottom" id="vTX-Oh-85q"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="customTextLabel" destination="vqQ-In-gKc" id="Pam-MZ-yAM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
